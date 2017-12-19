@@ -1,5 +1,5 @@
 {
-    "name": "drupal-composer/drupal-project",
+    "name": "dolfandringa/fuwiki",
     "description": "Project template for Drupal 8 projects with composer",
     "type": "project",
     "license": "GPL-2.0+",
@@ -13,6 +13,29 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.7.0",
+                "type": "drupal-library",
+                "dist": {
+                      "url": "https://github.com/harvesthq/chosen/releases/download/v1.7.0/chosen_v1.7.0.zip",
+                      "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+              }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dolfandringa/drupal-group.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dolfandringa/drupal.git"
         }
     ],
     "require": {
@@ -23,7 +46,47 @@
         "drupal/core": "~8.4",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "drupal/access_unpublished": "^1.0@alpha",
+        "drupal/anchor_link": "^1.6",
+        "drupal/authorization": "1.x-dev",
+        "drupal/bootstrap_kit": "^4.2",
+        "drupal/bootstrap_layouts": "^5.0",
+        "drupal/bricks": "^1.6",
+        "drupal/chosen": "^2.4",
+        "drupal/devel": "^1.2",
+        "drupal/ds": "^3.1",
+        "drupal/eck": "^1.0@alpha",
+        "drupal/facets": "^1.0@alpha",
+        "drupal/field_collection": "^1.0@alpha",
+        "drupal/field_group": "^1.0",
+        "drupal/field_permissions": "^1.0@beta",
+        "drupal/footnotes": "^2.0",
+        "drupal/group": "dev-gnode_fixes",
+        "drupal/inline_entity_form": "^1.0@beta",
+        "drupal/ldap_authentication": "^3.0@beta",
+        "drupal/ldap_authorization": "^3.0@beta",
+        "drupal/ldap_feeds": "^3.0@beta",
+        "drupal/ldap_query": "^3.0@beta",
+        "drupal/ldap_servers": "^3.0@beta",
+        "drupal/ldap_sso": "^1.0@beta",
+        "drupal/ldap_user": "^3.0@beta",
+        "drupal/linkit": "^4.3",
+        "drupal/markdown": "^1.2",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/panelizer": "^4.0",
+        "drupal/panels": "^4.2",
+        "drupal/paragraphs": "^1.2",
+        "drupal/pathauto": "^1.0",
+        "drupal/pbf": "^1.1",
+        "drupal/permissions_by_term": "^1.37",
+        "drupal/realname": "^1.0@RC",
+        "drupal/reference_value_pair": "^1.2",
+        "drupal/search_api": "^1.5",
+        "drupal/taxonomy_breadcrumb": "^1.0@alpha",
+        "drupal/video": "^1.2",
+        "drupal/views_aggregator": "1.x-dev",
+        "harvesthq/chosen": "^1.7"
     },
     "require-dev": {
         "behat/mink": "~1.7",
