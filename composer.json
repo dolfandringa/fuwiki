@@ -27,11 +27,11 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/dolfandringa/drupal-group.git"
+            "url": "https://github.com/dolfandringa/drupal-group"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/dolfandringa/drupal.git"
+            "url": "https://github.com/dolfandringa/drupal"
         },
         {
             "type": "composer",
@@ -52,11 +52,9 @@
         "drupal/authorization": "1.x-dev",
         "drupal/bootstrap_kit": "^4.2",
         "drupal/bootstrap_layouts": "^5.0",
-        "drupal/bricks": "^1.6",
         "drupal/chosen": "^2.4",
         "drupal/devel": "^1.2",
         "drupal/ds": "^3.1",
-        "drupal/eck": "^1.0@alpha",
         "drupal/facets": "^1.0@alpha",
         "drupal/field_collection": "^1.0@alpha",
         "drupal/field_group": "^1.0",
