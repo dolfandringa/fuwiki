@@ -30,6 +30,10 @@
             "url": "https://github.com/dolfandringa/drupal-group"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/dolfandringa/fuwiki_theme"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "drupal/core",
@@ -95,6 +99,7 @@
         "drupal/taxonomy_breadcrumb": "^1.0@alpha",
         "drupal/video": "^1.2",
         "drupal/views_aggregator": "1.x-dev",
+        "dolfandringa/fuwiki_theme": "*",
         "harvesthq/chosen": "^1.7"
     },
     "require-dev": {
