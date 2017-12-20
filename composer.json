@@ -11,10 +11,6 @@
     ],
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "harvesthq/chosen",
@@ -36,6 +32,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/dolfandringa/drupal.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
         }
     ],
     "require": {
@@ -43,7 +43,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.4",
+        "drupal/core": "dev-8.5.userfield_access",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
