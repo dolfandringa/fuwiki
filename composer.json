@@ -27,26 +27,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/dolfandringa/drupal-group"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/dolfandringa/fuwiki_theme"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupal/core",
-                "version": "8.5.x-dev",
-                "source": {
-                    "url": "https://github.com/dolfandringa/drupal.git",
-                    "type": "git",
-                    "reference": "8.5.userfield_access"
-                },
-                "autoload": {
-                    "classmap": [""]
-                }
-            }
         },
         {
             "type": "composer",
@@ -58,7 +39,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "^1.0.2",
-        "drupal/core": "8.5.x-dev",
+        "drupal/core": "~8.4",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -75,7 +56,7 @@
         "drupal/field_group": "^1.0",
         "drupal/field_permissions": "^1.0@beta",
         "drupal/footnotes": "^2.0",
-        "drupal/group": "dev-gnode_fixes",
+        "drupal/group": "~1.0",
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/ldap_authentication": "^3.0@beta",
         "drupal/ldap_authorization": "^3.0@beta",
@@ -141,12 +122,21 @@
     },
     "extra": {
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
+	    "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/core": {
+                "Allow other modules to override access permissions for private user fields": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/user-access.2773645-39.patch"
+            },
+            "drupal/group": {
+                "Allow other modules to override group node access permissions": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/drupal-group-gnode_node_access.patch",
+		"Add a token to group nodes for the parent groups": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/group_add-node-group-tokens-2774827-22.patch"
+            }
         }
     }
 }
