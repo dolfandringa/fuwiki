@@ -135,7 +135,8 @@
             },
             "drupal/group": {
                 "Allow other modules to override group node access permissions": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/drupal-group-gnode_node_access.patch",
-		        "Add a token to group nodes for the parent groups": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/group_add-node-group-tokens-2774827-22.patch"
+		        "Add a token to group nodes for the parent groups": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/group_add-node-group-tokens-2774827-22.patch",
+                "Fix issue 2908830": "http://cgit.drupalcode.org/group/patch/?id=d265f2934a8751f180f32ef193f1fd1b7a20ff52"
             },
             "drupal/permissions_by_term": {
                 "Implement gnode_node_access": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/permissions_by_term_gnode_node_access.patch"
