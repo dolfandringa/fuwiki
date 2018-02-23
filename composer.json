@@ -134,11 +134,6 @@
             "drupal/core": {
                 "Allow other modules to override access permissions for private user fields": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/user-access.2773645-39.patch"
             },
-            "drupal/group": {
-                "Allow other modules to override group node access permissions": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/drupal-group-gnode_node_access.patch",
-		        "Add a token to group nodes for the parent groups": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/group_add-node-group-tokens-2774827-22.patch",
-                "Fix issue 2908830": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/issue-2908830-group-content-deletion.patch"
-            },
             "drupal/permissions_by_term": {
                 "Implement gnode_node_access": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/permissions_by_term_gnode_node_access.patch"
             }
