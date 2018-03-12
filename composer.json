@@ -74,6 +74,7 @@
         "drupal/pbf": "^1.1",
         "drupal/permissions_by_term": "^1.37",
         "drupal/realname": "^1.0@RC",
+        "drupal/redirect": "~1.0",
         "drupal/reference_value_pair": "^1.2",
         "drupal/search_api": "^1.5",
         "drupal/taxonomy_breadcrumb": "^1.0@alpha",
