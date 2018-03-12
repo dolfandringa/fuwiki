@@ -71,6 +71,7 @@
         "drupal/panels": "^4.2",
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.0",
+        "drupal/pathologic": "1.x-dev",
         "drupal/pbf": "^1.1",
         "drupal/permissions_by_term": "^1.37",
         "drupal/realname": "^1.0@RC",
