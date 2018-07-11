@@ -136,9 +136,6 @@
             },
             "drupal/group": {
                 "Implement group node tokens": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/group_add-node-group-tokens-2774827-22.patch"
-            },
-            "drupal/page_manager": {
-                "Fix page manager bug": "https://raw.githubusercontent.com/dolfandringa/drupal-patches/master/drupal_pagemanager-2918564-22.patch"
             }
         },
         "drupal-scaffold": {
