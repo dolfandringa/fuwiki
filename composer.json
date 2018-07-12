@@ -5,8 +5,8 @@
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "Dolf Andringa",
+            "role": "Developer"
         }
     ],
     "repositories": [
@@ -39,14 +39,18 @@
         "cweagans/composer-patches": "^1.6",
         "dolfandringa/fuwiki_theme": "dev-master",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "~8.5.3",
+        "drush/drush": "^9.0.0",
+        "vlucas/phpdotenv": "^2.4",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3",
         "drupal/access_unpublished": "^1.0@alpha",
         "drupal/anchor_link": "^1.6",
         "drupal/authorization": "1.x-dev",
         "drupal/bootstrap_kit": "^4.2",
         "drupal/bootstrap_layouts": "^5.0",
         "drupal/chosen": "^2.4",
-        "drupal/console": "^1.0.2",
-        "drupal/core": "~8.5.3",
         "drupal/devel": "^1.2",
         "drupal/diff": "^1.0@RC",
         "drupal/ds": "^3.1",
@@ -81,11 +85,7 @@
         "drupal/taxonomy_breadcrumb": "^1.0@alpha",
         "drupal/video": "^1.2",
         "drupal/views_aggregator": "1.x-dev",
-        "drush/drush": "^9.0.0",
-        "harvesthq/chosen": "^1.7",
-        "vlucas/phpdotenv": "^2.4",
-        "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
+        "harvesthq/chosen": "^1.7"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "~8.5.3"
@@ -112,10 +112,12 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "@composer drupal:scaffold"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "@composer drupal:scaffold"
         ]
     },
     "extra": {
