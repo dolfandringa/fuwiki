@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b592cae78be1a3a4bff4d5adbcef9334",
+    "content-hash": "1143858cce4dd7b21a2f0cad21e71000",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1449,17 +1449,17 @@
         },
         {
             "name": "drupal/access_unpublished",
-            "version": "1.0.0-alpha6",
+            "version": "1.0.0-alpha7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/access_unpublished",
-                "reference": "8.x-1.0-alpha6"
+                "reference": "8.x-1.0-alpha7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/access_unpublished-8.x-1.0-alpha6.zip",
-                "reference": "8.x-1.0-alpha6",
-                "shasum": "09ec43deff8e145f29937ec324c92563bb17e9de"
+                "url": "https://ftp.drupal.org/files/projects/access_unpublished-8.x-1.0-alpha7.zip",
+                "reference": "8.x-1.0-alpha7",
+                "shasum": "617bef359d18df0631b6974f93227714e0ac6566"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1470,8 +1470,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6",
-                    "datestamp": "1529053124",
+                    "version": "8.x-1.0-alpha7",
+                    "datestamp": "1531380221",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3833,59 +3833,6 @@
             }
         },
         {
-            "name": "drupal/ldap_sso",
-            "version": "1.0.0-beta7",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/ldap_sso",
-                "reference": "8.x-1.0-beta7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ldap_sso-8.x-1.0-beta7.zip",
-                "reference": "8.x-1.0-beta7",
-                "shasum": "5eda68a6531d16f5fb31a7ca17fd3ca7aaea5cc8"
-            },
-            "require": {
-                "drupal/core": "~8.0",
-                "drupal/ldap_authentication": "*",
-                "drupal/ldap_servers": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta7",
-                    "datestamp": "1529162025",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "grahl",
-                    "homepage": "https://www.drupal.org/user/146040"
-                },
-                {
-                    "name": "hotspoons",
-                    "homepage": "https://www.drupal.org/user/343807"
-                }
-            ],
-            "description": "Single-Sign-On (SSO) for Lightweight Directory Access Protocol (LDAP)",
-            "homepage": "https://www.drupal.org/project/ldap_sso",
-            "support": {
-                "source": "http://cgit.drupalcode.org/ldap_sso"
-            }
-        },
-        {
             "name": "drupal/ldap_user",
             "version": "3.0.0-beta2",
             "require": {
@@ -4082,8 +4029,7 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -9898,16 +9844,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.7",
+            "version": "5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce"
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
                 "shasum": ""
             },
             "require": {
@@ -9953,7 +9899,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-05-29T13:50:43+00:00"
+            "time": "2018-07-13T03:27:23+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -10766,7 +10712,6 @@
         "drupal/ldap_feeds": 10,
         "drupal/ldap_query": 10,
         "drupal/ldap_servers": 10,
-        "drupal/ldap_sso": 10,
         "drupal/ldap_user": 10,
         "drupal/page_manager": 10,
         "drupal/pathologic": 20,

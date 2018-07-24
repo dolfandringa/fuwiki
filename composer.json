@@ -62,7 +62,6 @@
         "drupal/ldap_feeds": "^3.0@beta",
         "drupal/ldap_query": "^3.0@beta",
         "drupal/ldap_servers": "^3.0@beta",
-        "drupal/ldap_sso": "^1.0@beta",
         "drupal/ldap_user": "^3.0@beta",
         "drupal/linkit": "^4.3",
         "drupal/markdown": "^1.2",
