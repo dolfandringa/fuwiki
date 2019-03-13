@@ -91,7 +91,8 @@
         "webflo/drupal-core-require-dev": "~8.5.3"
     },
     "conflict": {
-        "drupal/drupal": "*"
+        "drupal/drupal": "*",
+        "twig/twig": ">=1.38.0 <=1.38.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
